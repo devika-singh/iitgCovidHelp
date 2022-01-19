@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reviews</title>
+    <style>
+        :root{
+    --chili:#E83333;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    transition:all .2s linear;
+}
+
+h1, h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+*::selection{
+    background:var(--chili);
+    color:#ffffff;
+}
+html{    
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body{    
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#333333;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--chili);
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem 10%;
+    padding-top: 8.5rem;
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    width:100%;
+    background:#ffffff;
+    padding: .5rem 10%;
+    box-shadow: 0 .3rem 2rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 4rem rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo img{
+    height:7rem;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+ .navbar ul li a.active,
+ .navbar ul li a:hover{
+    color:black;
+}
+
+p{
+    font-size: 3rem;
+}
+
+.btn{
+    font-size: 1.7rem;
+    padding:.7rem 4rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    background:rgba(220,43,32,0.1);
+    color:#333333;
+    cursor: pointer;
+    border:.2rem solid var(--chili);
+}
+
+.btn:hover{
+    background:var(--chili);
+}
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    padding:0 .5rem;
+    color:#333333;
+}
+
+.footer{
+    background:#282727;
+    padding:1rem 7%;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+    flex:1 1 25rem;
+    margin:2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:#ffffff;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.footer .box-container .box p{
+    font-size: 1.7rem;
+    color:#eeeeee;
+    padding:1rem 0;
+}
+
+.footer .box-container .box a{
+    font-size: 1.7rem;
+    color:#eeeeee;
+    padding:1rem 0;
+    display: block;
+}
+
+.footer .box-container .box a:hover{
+    color:var(--chili);
+}
+
+.footer .box-container .box p i{
+    padding-right: .5rem;
+    color:var(--chili);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    border-top: .2rem solid rgba(255,255,255,.7);
+    padding:2rem 1rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color:#ffffff;
+}
+
+.footer .credit a{
+    color:var(--chili);
+}
+section{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: stretch;
+    background-size: cover;
+    background-blend-mode: saturation;
+    color: papayawhip;
+}
+.stars{
+    border: 1px solid red;
+    border-radius: 3rem;
+    width:30rem;
+    margin: 0px auto;
+    padding:1.2rem;
+    text-align: center;
+}
+.heading{
+    color: #000000;
+}
+.btn{
+    font-size: 2.3rem;
+    width:80%;
+    background-color: rgba(236, 39, 13, 0.6);
+}
+.checked {
+    color: orange;
+}
+.window{
+    width:100rem;
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+.format{
+    margin:.5rem;
+    background-color: rgba(40, 43, 40, 0.6);
+    margin-bottom: 1.5rem;;
+    font-size: 3rem;
+    padding: 3rem;
+    border-radius: 3rem;
+}
+.right{
+    float: right;
+    color: grey;
+}
+#nor{
+    display: none;
+}
+p{
+    font-size: 2.3rem;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        burger=document.querySelector('.burger')
+navbar=document.querySelector('.navbar')
+navList=document.querySelector('.nav-list')
+
+burger.addEventListener('click',()=>{
+  navList.classList.toggle('v-class')
+  navbar.classList.toggle('h-nav')
+})
+    </script>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<nav class="navbar h-nav" style="background-color: brown;">
+          <ul class="nav-list v-class">
+            <div class="logo"><img src="" width="70px" height="70px" alt="logo"></div>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+       </nav>
+<!-- header section ends -->
+
+<!--Your Page info and pics and body-->
+<section>
+	<div class="stars">
+        <h3 class="heading">Announcements</h3>
+        <button class="btn" id="5s" onclick="star5()">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>  
+        </button><br>
+        <button class="btn" id="4s" onclick="star4()">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </button><br>
+        <button class="btn" id="3s" onclick="star3()">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </button><br>
+        <button class="btn" id="2s" onclick="star2()">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </button><br>
+        <button class="btn" id="1s" onclick="star1()">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </button><br>
+    </div>
+    <div class="window">
+        <div class="r format">
+          
+            <span class="right"><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span></span>  
+            <br>
+            <p>
+            </p>
+        </div>
+        <div class="r format">
+            <span class="right"><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span></span>
+            <br>
+            <p></p>
+        </div>
+        <div class="format" id="nor">
+            <p>Sorry! We don't have reviews in this category.</p>
+        </div>
+    </div>
+</section>
+
+<!--Page body end-->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Contact Information</h3>
+            <p>Department of Computer Science and Engineering, Indian Institute of Technology Guwahati, Guwahati – 781039</p>
+            <p>xxxxxx@gmail.com</p>
+            <p>+xxx-xxx-789 </p>
+        </div>
+
+        <div class="box">
+            <h3>Locations</h3>
+            <a href="">IITG Hospital</a>
+            <a href="">Covid centre</a>
+            <a href="">Grocery pickup points</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="">Home</a>
+            <a href="">About</a>
+        </div>
+
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="https://github.com/devika-singh">Warrior Devika</a>
+            <a href="https://github.com/SreehariC">Warrior Sreehari</a>
+            <a href="https://github.com/dystopiandust">Warrior Tripti</a>
+            <a href="#">Warrior Ridhiman</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit">Created by <a href="https://github.com/devika-singh/iitgCovidHelp">Covid Warriors</a> </h1>
+
+</div>
+</body>
+</html>
