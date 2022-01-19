@@ -7,8 +7,10 @@ body{
 	font-size: 1.5rem;
 	background-color: #A3F1FF;
 	color: darkslategray;
+	padding: 0px;
+	margin: 0px;
 }
-h1{
+.heading{
 	display: block;
 	width: 20rem;
 	text-align: center;
@@ -35,4 +37,41 @@ h1{
 #loginFaculty, #loginStudents, #loginMedicalHelp{
 	display: none;
 	text-align: center;
+}
+
+header{
+	height: 14%;
+	width: 100%;
+	align-self: flex-start;
+	text-align: center;
+	line-height: 200%;
+	font-size: 3rem;
+}
+.mainbody{
+	margin: 0px;
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: stretch;
+	background-color: white;
+}
+img{
+	float: right;
+	width: 12rem;
+	border-radius: 12rem ;
+}
+footer{
+	text-align: center;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	font-size: 1rem;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+a{
+	text-decoration: none;
+	color: orange;
 }
