@@ -1,0 +1,38 @@
+body{
+	display: flex;
+	height: 97vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	background-color: #A3F1FF;
+	color: darkslategray;
+}
+h1{
+	display: block;
+	width: 20rem;
+	text-align: center;
+	color: slategray;
+}
+.container{
+	border-radius: 15px 50px;
+	width: 20rem;
+	height: 15rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+}
+.button1{
+	background-color: #043574;
+	border-radius: 9px;
+	color: white;
+	width: 7rem;
+	height: 2rem;
+	margin-left: 7rem;
+	margin-top: .3rem;
+}
+#loginFaculty, #loginStudents, #loginMedicalHelp{
+	display: none;
+	text-align: center;
+}
