@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="javascript.js" href="javascript.js"></script>
+	<title>Login page</title>
+</head>
+<body>
+<!--Objective- Login page-->
+<h1 class="heading">Login</h1>
+<div class="container">
+	<div id="select profession">
+		<form>
+			<label for="type">Login as</label><br>
+			<input type="radio" class="radio" id="Faculty" name="type" value="faculty">
+			<label for="faculty">Faculty</label><br>
+			<input type="radio" class="radio" id="Student" name="type" value="student">
+			<label for="Student">Student</label><br>
+			<input type="radio" class="radio" id="MedicalProfessional" name="type" value="medical">
+			<label for="MedicalProfessional">Medical Professional</label><br>
+			<button type="button" class="button1" onclick="checkAndDisplay()">continue -></button>
+		</form>
+	</div>
+	
+	<div id="loginFaculty">
+		<button onclick="back()" class="button1">Back</button>
+		<form>
+			<label for="fType">Faculty id:</label>
+			<input type="text" inputmode="numeric" id="fType" name="fId"><br>
+			<label for="fPassword">Password:</label>
+			<input type="password" id="fPassword" name="password"><br>
+			<input type="submit" name="login status" class="button1" value="Login" onclick="shift()">
+		</form>
+		
+	</div>
+	<div id="loginStudents">
+		<button onclick="back()" class="button1">Back</button>
+		<form>
+			<label for="sType">Roll No.:</label>
+			<input type="text" inputmode="numeric" id="sType" name="RollNo"><br>
+			<label for="sPassword">Password:</label>
+			<input type="password" id="sPassword" name="password"><br>
+			<input type="submit" name="login status" class="button1" value="Login" onclick="shift()">
+		</form>
+		
+	</div>
+	<div id="loginMedicalHelp">
+		<button onclick="back()" class="button1">Back</button>
+		<form>
+			<label for="mType">Medical id:</label>
+			<input type="text" inputmode="numeric" id="mType" name="mId"><br>
+			<label for="mPassword">Password:</label>
+			<input type="password" id="mPassword" name="password"><br>
+			<input type="submit" name="login status" class="button1" value="Login" onclick="shift()">
+		</form>
+	</div>
+</div>
+
+
+</body>
+</html>
