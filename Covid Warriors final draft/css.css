@@ -1,0 +1,85 @@
+body{
+	display: flex;
+	height: 97vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	background-color: #A3F1FF;
+	color: darkslategray;
+	padding: 0px;
+	margin: 0px;
+}
+.heading{
+	display: block;
+	width: 20rem;
+	text-align: center;
+	color: slategray;
+}
+.container{
+	border-radius: 15px 50px;
+	width: 20rem;
+	height: 15rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+}
+.button1{
+	background-color: #043574;
+	border-radius: 9px;
+	color: white;
+	width: 7rem;
+	height: 2rem;
+	margin-left: 7rem;
+	margin-top: .5rem;
+}
+#loginFaculty, #loginStudents, #loginMedicalHelp{
+	display: none;
+	text-align: center;
+}
+#loginFaculty button, 
+#loginStudents button, 
+#loginMedicalHelp button{
+	margin-left: 0rem;
+	margin-right: 7rem;
+	margin-bottom: .5rem;
+}
+header{
+	height: 20%;
+	width: 100%;
+	align-self: flex-start;
+	text-align: center;
+	line-height: 350%;
+	font-size: 3rem;
+}
+.mainbody{
+	margin: 0px;
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: stretch;
+	background-color: white;
+	font-size:85%;
+}
+img{
+	float: right;
+	width: 10rem;
+	border-radius: 10rem ;
+	position: float;
+}
+footer{
+	text-align: center;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	font-size: 1rem;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+a{
+	text-decoration: none;
+	color: orange;
+}
